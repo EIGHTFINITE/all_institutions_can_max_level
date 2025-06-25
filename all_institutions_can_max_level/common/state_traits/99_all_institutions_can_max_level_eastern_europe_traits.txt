@@ -5,7 +5,6 @@
 		building_shipyards_throughput_add = 0.2
         building_port_throughput_add = 0.2
 		state_trade_capacity_mult = 0.25
-        state_building_naval_base_max_level_add = 4
         state_market_access_price_impact = 0.05
 	}
 }
@@ -17,8 +16,6 @@ state_trait_saronic_gulf = {
 		building_military_shipyards_throughput_add = 0.1
 		building_port_throughput_add = 0.1
 		state_trade_capacity_mult = 0.15
-		state_building_naval_base_max_level_add = 10
-		state_building_naval_base_max_level_add = 10
 		state_market_access_price_impact = 0.05
 	}
 }
@@ -28,7 +25,6 @@ state_trait_kronstadt_island = {
 	modifier = {
 		building_military_shipyards_throughput_add = 0.20
 		building_port_throughput_add = 0.20
-		state_building_naval_base_max_level_add = 20
 		state_market_access_price_impact = 0.05
 	}
 }
