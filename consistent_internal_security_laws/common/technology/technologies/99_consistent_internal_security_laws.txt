@@ -1,0 +1,73 @@
+﻿central_archives = {
+	# Unlocks Secret Police - Internal Security Law
+	# Unlocks Horizontal Drawer Cabinets PM for Government Administration
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/central_archives.dds"
+	category = society
+
+	modifier = {
+		state_tax_capacity_add = 25
+		country_institution_home_affairs_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		centralization
+	}
+
+	on_researched = {
+		if = {
+			limit = {
+				NOT = {
+					any_political_movement = {
+						is_political_movement_type = movement_modernizer
+					}
+				}
+				OR = {
+					AND = {
+						OR = {
+							country_is_in_south_america = yes
+							country_is_in_central_america = yes
+						}
+						country_rank <= rank_value:major_power
+					}
+					is_country_type = colonial
+					is_country_type = unrecognized
+				}
+				NAND = {
+					has_law = law_type:law_protectionism
+					OR = {
+						has_law = law_type:law_interventionism
+						has_law = law_type:law_command_economy
+						has_law = law_type:law_laissez_faire
+					}
+					has_law = law_type:law_compulsory_primary_school
+				}
+			}
+			create_political_movement = { type = movement_modernizer }
+		}
+	}
+
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+
+mass_surveillance = {
+	# Unlocks Personal Files PM in Government Administrations
+	# Unlocks Militarized Police - Policing Law
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/mass_surveillance.dds"
+	category = society
+
+	modifier = {
+		state_tax_capacity_add = 25
+	}
+
+	unlocking_technologies = {
+		central_planning
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
