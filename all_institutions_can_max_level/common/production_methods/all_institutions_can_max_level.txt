@@ -1,24 +1,4 @@
-﻿pm_anchorage = {
-	texture = "gfx/interface/icons/production_method_icons/anchorage.dds"
-
-	disallowing_laws = {
-		law_isolationism
-	}
-
-	low_pop_method = yes # AI will activate this method for states with low population
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_laborers_add = 175
-			building_employment_clerks_add = 50
-			building_employment_bureaucrats_add = 25
-		}
-	}
-
-	replacement_if_valid = pm_anchorage_isolationism
-}
-
-pm_basic_port = {
+﻿pm_basic_port = {
 	texture = "gfx/interface/icons/production_method_icons/basic_port.dds"
 
 	disallowing_laws = {
@@ -127,25 +107,6 @@ pm_modern_port = {
 	}
 
 	replacement_if_valid = pm_modern_port_isolationism
-}
-
-pm_anchorage_isolationism = {
-	texture = "gfx/interface/icons/production_method_icons/anchorage.dds"
-	is_hidden_when_unavailable = yes
-
-	unlocking_laws = {
-		law_isolationism
-	}
-
-	low_pop_method = yes # AI will activate this method for states with low population
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_laborers_add = 175
-			building_employment_clerks_add = 50
-			building_employment_bureaucrats_add = 25
-		}
-	}
 }
 
 pm_basic_port_isolationism = {
