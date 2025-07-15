@@ -5,11 +5,10 @@
 	production_methods = {
 		pm_anchorage
 		pm_basic_port
-		pm_industrial_port
-		pm_modern_port
-		pm_anchorage_isolationism
 		pm_basic_port_isolationism
+		pm_industrial_port
 		pm_industrial_port_isolationism
+		pm_modern_port
 		pm_modern_port_isolationism
 	}
 }
