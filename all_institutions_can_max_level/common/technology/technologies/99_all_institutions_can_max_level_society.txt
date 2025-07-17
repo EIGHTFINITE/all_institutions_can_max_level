@@ -18,6 +18,45 @@
 	}
 }
 
+medical_degrees = {
+	# Unlocks Private Health Insurance, Public Health Insurance - Health System Laws
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/medical_degrees.dds"
+	category = society
+
+	modifier = {
+		country_institution_health_system_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		academia
+	}
+
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+
+pharmaceuticals = {
+	# Increases the ratio of pop casualties that survive a battle
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/pharmaceuticals.dds"
+	category = society
+
+	modifier = {
+		country_institution_health_system_max_investment_add = 1
+		state_harvest_condition_disease_outbreak_impact_mult = -0.2
+	}
+
+	unlocking_technologies = {
+		medical_degrees
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
 central_archives = {
 	# Unlocks Secret Police - Internal Security Law
 	# Unlocks Horizontal Drawer Cabinets PM for Government Administration
