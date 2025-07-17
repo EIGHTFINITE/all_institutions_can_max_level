@@ -10,7 +10,6 @@
 	}
 
 	modifier = {
-		country_institution_police_max_investment_add = 2
 	}
 
 	institution = institution_police
@@ -97,7 +96,6 @@ law_militarized_police = {
 	}
 
 	modifier = {
-		country_institution_police_max_investment_add = 2
 	}
 
 	institution = institution_police
