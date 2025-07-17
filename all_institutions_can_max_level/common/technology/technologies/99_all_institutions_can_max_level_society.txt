@@ -1,4 +1,24 @@
-﻿central_archives = {
+﻿law_enforcement = {
+	# Unlocks Local Police, Dedicated Police - Policing Laws
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/law_enforcement.dds"
+	category = society
+
+	modifier = {
+		country_institution_police_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		tech_bureaucracy
+		urban_planning
+	}
+
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+
+central_archives = {
 	# Unlocks Secret Police - Internal Security Law
 	# Unlocks Horizontal Drawer Cabinets PM for Government Administration
 	era = era_2
