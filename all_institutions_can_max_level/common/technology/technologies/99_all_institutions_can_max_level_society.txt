@@ -25,7 +25,7 @@ medical_degrees = {
 	category = society
 
 	modifier = {
-		country_institution_health_system_max_investment_add = 1
+		country_institution_health_system_max_investment_add = 2
 	}
 
 	unlocking_technologies = {
@@ -44,7 +44,7 @@ pharmaceuticals = {
 	category = society
 
 	modifier = {
-		country_institution_health_system_max_investment_add = 1
+		country_institution_health_system_max_investment_add = 2
 		state_harvest_condition_disease_outbreak_impact_mult = -0.2
 	}
 
