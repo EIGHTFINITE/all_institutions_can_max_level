@@ -10,7 +10,6 @@
 	}
 
 	modifier = {
-		country_institution_social_security_max_investment_add = 2
 	}
 
 	institution = institution_social_security
@@ -37,7 +36,6 @@ law_old_age_pension = {
 	}
 
 	modifier = {
-		country_institution_social_security_max_investment_add = 2
 	}
 
 	institution = institution_social_security
