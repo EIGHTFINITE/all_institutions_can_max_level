@@ -111,6 +111,98 @@ central_archives = {
 	}
 }
 
+labor_movement = {
+	# Unlocks Regulatory Bodies - Labor Rights Law
+	# Unlocks Restricted Child Labor - Children's Rights Laws
+	# Unlocks Wage Controls - Social Security Laws
+	# Increases attraction of Trade Unions IG
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/labor_movement.dds"
+	category = society
+
+	modifier = {
+		state_expected_sol_from_literacy = 1
+		country_institution_workplace_safety_max_investment_add = 3
+		country_agitator_slots_add = 1
+	}
+
+	unlocking_technologies = {
+		mass_communication
+		egalitarianism
+	}
+
+	on_researched = {
+		set_global_variable = labour_movement_researched
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+					has_strategy = ai_strategy_maintain_mandate_of_heaven
+				}
+			}
+			add = -0.5
+		}
+	}
+}
+
+human_rights = {
+	# Unlocks Worker Protections - Labor Rights Law
+	# Unlocks Protected Speech - Freedom of Speech Law
+	# Unlocks Compulsory Schooling - Children's Rights Laws
+	# Unlocks Old Age Pensions - Social Security Laws
+	# Should presumably unlock a lot of Laws in the Human Rights category of Laws
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/human_rights.dds"
+	category = society
+
+	modifier = {
+		country_institution_social_security_max_investment_add = 1
+	}
+
+	unlocking_technologies = {
+		egalitarianism
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				has_strategy = ai_strategy_progressive_agenda
+			}
+			add = 0.5
+		}
+		if = {
+			limit = {
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+					has_strategy = ai_strategy_maintain_mandate_of_heaven
+				}
+			}
+			add = -0.5
+		}
+	}
+}
+
 mass_surveillance = {
 	# Unlocks Personal Files PM in Government Administrations
 	# Unlocks Militarized Police - Policing Law
