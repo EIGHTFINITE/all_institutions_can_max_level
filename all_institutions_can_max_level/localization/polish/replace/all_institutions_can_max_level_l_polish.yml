@@ -1,3 +1,5 @@
 ﻿l_polish:
  law_minimum_wages:0 "$building_minimum_wage_mult$"
  law_minimum_wages_desc:0 "$corn_laws.4.a$"
+ law_state_alms:0 "$alms_for_the_poor$"
+ law_state_alms_desc:0 "$election_contextual_events.1.b$"
