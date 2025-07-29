@@ -1,0 +1,3 @@
+﻿l_english:
+ law_minimum_wages:0 "$building_minimum_wage_mult$"
+ law_minimum_wages_desc:0 "$corn_laws.4.a$"
